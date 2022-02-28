@@ -44,3 +44,17 @@ ul li{
     margin-bottom:  15px;
     list-style-position: inside;
 }
+
+#gallery {
+    border: 2px solid #DBE7AB;
+    text-align: center;
+}
+
+#gallery img {
+    max-width: 100%;
+    margin-bottom: auto;
+}
+
+#gallery figure {
+    text-align: center;
+}
