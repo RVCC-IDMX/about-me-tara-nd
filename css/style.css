@@ -1,12 +1,16 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    background-color:#FFDEBF ;
-    color:#C115FF ;
+    background-color: #BFE1FF;
+    color:#C352F0 ;
+    text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Baloo 2";
-    font-size: 40pt;
+    text-align: center;
+}
+h1 {
+    font-size:40pt;
 }
 
 header { 
@@ -14,10 +18,10 @@ header {
 }
 
 #hero , footer {
-    border: 4px solid #7595F5;
+    border: 4px solid #DBE7AB;
     text-align: center;
-    background-color:#FCEDFE ;
-    color:#7599F5 ;
+    background-color:#F9BBAF ;
+    color:#FAF8FC ;
     padding:10px;
 }
 
@@ -28,4 +32,15 @@ header {
 
 #bio {
     text-align: center;
+}
+
+ul {
+    list-style-type: circle ;
+    
+}
+
+ul li{
+    background-color: #FAF8FC;
+    margin-bottom:  15px;
+    list-style-position: inside;
 }
