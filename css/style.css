@@ -128,4 +128,16 @@ ul li{
     figure {
         display: block;
     }
-}
+}]
+/*iFrame*/
+
+figcaption {
+    text-align: center
+    ;}
+
+#video {
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}    
