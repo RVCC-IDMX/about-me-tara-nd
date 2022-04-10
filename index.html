@@ -13,6 +13,12 @@
 </head>
 
 <body>
+    <style>
+        body {
+          background-image: image(url);
+          background-repeat: no-repeat;
+        }
+        </style>
     <header>
 
         <img src="img/logo-96X96.svg" alt="Blue origami logo">
@@ -123,7 +129,87 @@
 
 
         </article>
+        <section id="contact">
+
+            <h2>
+                Contact Us:
+            </h2>
+
+                <form id="contactForm" name="contactForm" method="POST" data-netlify="true" >
+
+                    <fieldset>
+                        <legend>
+                            Contact Form
+                        </legend>
+
+                        <div id="FormElements">
+                            <!-- Name -->
+                            <label for="name">Name (required)</label><br>
+                            <input type = "text" id="name" name="name" required><br>
+
+                            <!-- Email -->
+                            <label for="email">Email (required)</label><br>
+                            <input type = "email" id="email" name="email" required><br>
+
+                            <!-- Phone -->
+                            <label for="tel">Phone (optional)</label><br>
+                            <input type = "tel" id="phone" name="phone"><br>
+                    
+                            <!-- Phone Type -->
+                            <label for="phonetype">Phone type (optional)</label><br>
+                            <select id="phonetype" name="phonetype">
+                                <option value="" selected>Select phone type</option>
+                                <option value="Mobile">Mobile</option>
+                                <option value="Work">Work</option>
+                                <option value="Home">Home</option>
+                            </select>
+
+                            <!-- Message -->
+                            <br><label for="message">Message (optional)</label>
+                            <br><textarea id="message" name="message" rows ="8"></textarea>
+
+                            <!-- Reply -->
+                            <fieldset>
+                                <legend>Would you like a reply?</legend>
+
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="message-yes"
+                                        name="reply" value = "Yes for a reply please.">
+                                        <label for="message-yes">Yes a reply would be nice.</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="message-no"
+                                        name="reply" value="No reply please." checked>
+                                        <label for="message-no">No, thanks.</label>
+                                   </li>
+                                </ul>
+
+
+                            </fieldset>
+                        
+                            <!-- Submit -->
+                            <button type="submit" id="button">Send </button>
+
+
+                        </div>
+
+                    </fieldset>
+
+                </form>
+
+
+            </section>
+
+
+
+
+
     </main>
+
+
+
+
 
     <footer>
         ©2022 -Tara Nordmann
