@@ -1,7 +1,7 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    background-color: #BFE1FF;
-    color:#C352F0 ;
+    background-color: #000000;
+    color:#B28EDB;
     text-align: center;
 }
 
@@ -128,7 +128,7 @@ ul li{
     figure {
         display: block;
     }
-}]
+}
 /*iFrame*/
 
 figcaption {
@@ -141,3 +141,71 @@ figcaption {
     max-width: 100%;
     height: auto;
 }    
+
+/* Contact Form */
+
+#formElements {
+    display:grid;
+    row-gap:.5em;
+    
+    
+}
+
+#contact {
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+fieldset {
+    border: 2px solid #DBE7AB;
+    margin-top: 1em;
+    margin-bottom:1em;
+}
+
+legend {
+    background-color: #DBE7AB;
+    color: white;
+    padding:.5em;
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding: .5em;
+    font-size:1rem;
+}
+
+#contact ul {
+    list-style:none;
+    padding:0px;
+}
+
+#contact li {
+    margin:1rem;
+}
+
+#button {
+    background-color: #DBE7AB;
+    color: white;
+    border: 1px solid #DBE7AB;
+    max-width:400px;
+    width:50%;
+    margin: auto;
+    justify-self: center;
+}
+
+#name {
+    width: auto;
+}
+
+#email {
+    width: auto;
+}
+
+#phone {
+    width: auto;
+}
+
+#message {
+    width: auto;
+}
