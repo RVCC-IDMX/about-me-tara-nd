@@ -159,13 +159,13 @@ figcaption {
 }
 
 fieldset {
-    border: 2px solid #DBE7AB;
+    border: 2px solid #F9BBAF;
     margin-top: 1em;
     margin-bottom:1em;
 }
 
 legend {
-    background-color: #DBE7AB;
+    background-color: #F9BBAF;
     color: white;
     padding:.5em;
 }
@@ -185,7 +185,7 @@ legend {
 }
 
 #button {
-    background-color: #DBE7AB;
+    background-color: #F9BBAF;
     color: white;
     border: 1px solid #DBE7AB;
     max-width:400px;
