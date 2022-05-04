@@ -13,16 +13,12 @@
 </head>
 
 <body>
-    <style>
-        body {
-          background-image: image(url);
-          background-repeat: no-repeat;
-        }
-        </style>
+    
     <header>
+        
         <nav class="navbar">
         <div class="logo">
-        <img src="img/logo-96X96.svg" alt="Blue origami logo">
+        <img src="img/logo.jpg.png" alt="my own logo">
         <h1>Web Dev I</h1>
     </div>
     <div class="navbar-links">
@@ -35,7 +31,6 @@
     </div>
 </nav>
     </header>
-
     <main>
         <section  id="hero">
         
@@ -54,15 +49,25 @@
             <div>
                 <p>I want to be...</p>
                 <p>an astronaunt and an excellent coder!</p>
-                <p> Did you know that our hottest Planet in the Solar System is 450C, which is equal to 842 degree
-                    fahrenheit!</p>
-                <p>Our hottest planet isn't Mercury, as most probably guess since it is the Planet closest to the sun,
-                </p>
-                <p> Venus is actually the hottest! Mercury is not the hottest Planet since it has no atmosphere, which
-                    regulates temperature. </p>
-                <p>I'm a total math geek, even if some problems may take me a long time to finally figure out. But the
-                    feeling after solving a problem you have been stuck on for a while is the greatest reward!</p>
-                <p><a href="https://www.nasa.gov/topics/technology/index.html">NASA's amazing technologies</a>    </p>    
+                <p><p>Hi, my name is Tara Nordmann and this is my about me website. 
+                    <p>I’m an aspiring coder and a total science geek. I made my own website, </p>
+                    <p>so make sure to check that out. Besides school I volunteer at a business</p>
+                    <p> keeping track of their expenses etc. I’m from Germany and I used to travel</p>
+                     <p>throughout Europe when I did my voluntary year(you basically just volunteer</p>
+                     <p>for a year and get compensated). I visited Scandinavia, Italy,Spain,France, </p>
+                    <p>the Netherlands, Poland and many more. I miss living in Germany sometimes,</p>
+                    <p> simply because I love using public transportation. I do love that every city in</p>
+                    <p> the U.S (I’ve seen so far) is big and has an amazing skyline. I enjoy working out,</p>
+                    <p> learning new languages and anything science! Did you know that our hottest</p>
+                     <p>Planet in the Solar System is 450C, which is equal to 842 degree fahrenheit!</p>
+                    <p> Our hottest planet isn't Mercury, as most probably guess since it is the </p>
+                    <p>Planet closest to the sun,Venus is actually the hottest! Mercury is not the</p>
+                    <p> hottest Planet since it has no atmosphere, which regulates temperature.</p>
+                    <p> I'm a total math geek, even if some problems may take me a long time to</p>
+                    <p> finally figure out. But the feeling after solving a problem you have been</p>
+                    <p> stuck on for a while is the greatest reward! My favorite math is calculus and anything functions.</p>
+                    !</p>
+                <p><a href="https://nordmanntara.wixsite.com/my-site">My science blog</a>    </p>    
             </div>
         </section>
         <section id="Hobbies" >
@@ -127,11 +132,35 @@
 
         <article id="lit">
 
-            <h2>An Excerpt from Pride and Justice</h2>
+            <h2>Background Images</h2>
 
             <div>
 
-                <p>I think it will be best for her to go to bed tired out physically, so I shall take her for a long walk by the cliffs to Robin Hood's Bay and back. She ought not to have much inclination for sleep-walking then. Same day, 11 o'clock p. m.--Oh, but I am tired! If it were not that I had made my diary a duty I should not open it to-night. We had a lovely walk. Lucy, after a while, was in gay spirits, owing, I think, to some dear cows who came nosing towards us in a field close to the lighthouse, and frightened the wits out of us. I believe we forgot everything except, of course, personal fear, and it seemed to wipe the slate clean and give us a fresh start. We had a capital "severe tea" at Robin Hood's Bay in a sweet little old-fashioned inn, with a bow-window right over the seaweed-covered rocks of the strand. I believe we should have shocked the "New Woman" with our appetites. Men are more tolerant, bless them! Then we walked home with some, or rather many, stoppages to rest, and with our hearts full of a constant dread of wild bulls. Lucy was really tired, and we intended to creep off to bed as soon as we could. The young curate came in, however, and Mrs. Westenra asked him to stay for supper. Lucy and I had both a fight for it with the dusty miller; I know it was a hard fight on my part, and I am quite heroic. I think that some day the bishops must get together and see about breeding up a new class of curates, who don't take supper, no matter how they may be pressed to, and who will know when girls are tired. Lucy is asleep and breathing softly. She has more colour in her cheeks than usual, and looks, oh, so sweet. If Mr. Holmwood fell in love with her seeing her only in the drawing-room, I wonder what he would say if he saw her now. Some of the "New Women" writers will some day start an idea that men and women should be allowed to see each other asleep before proposing or accepting. But I suppose the New Woman won't condescend in future to accept; she will do the proposing herself. And a nice job she will make of it, too! There's some consolation in that. I am so happy to-night, because dear Lucy seems better. I really believe she has turned the corner, and that we are over her troubles with dreaming. I should be quite happy if I only knew if Jonathan.... God bless and keep him.</p>
+                <p>We may make use of the background-image property without any further configuration. The url() function must be used to identify the picture source, regardless of whatever property we use. The value returned by the url() method will serve as a link to the background image, and the same concepts that apply to creating hyperlink pathways will apply here as well. Keep an eye out for different directories and be sure to provide the exact location of the photograph. The route will be included in parentheses and it will be quoted. As an example,:
+                    div {
+                      background-image: url("alert.png");
+                    }
+                    Because the background image will, by default, repeat horizontally and vertically from the top left of the given element to fill up the element's background, adding a background picture alone with a url value may result in adverse outcomes. Fortunately, we have the ability to customize how and whether the image repeats by using the background-repeat and background-position properties.
+                    Background Repeat
+                    Unless otherwise specified, a background image will loop indefinitely, both vertically and horizontally.
+                    div {
+                      background-image: url("alert.png");
+                      background-repeat: no-repeat;
+                    }
+                    The background-repeat property accepts four different values: repeat, repeat-x, repeat-y, and no-repeat
+                    Background Position
+                    Background pictures are usually placed in the left upper corner of an element. We can, however, control where the background picture is positioned in relation to that corner by using the background-position property. Background-position needs two values: a horizontal offset (the first value) and a vertical offset (the second value) (the second value). If just one number is supplied, it is utilized for the horizontal offset, and the vertical offset is set to 50% by default.
+                    
+                    Background images are often placed at the left-most corner of an element's left-most corner. The background-position attribute, on the other hand, allows us to specify where the background image should be placed in reference to the corner in question. There are two values required for background-position: a horizontal offset (the first value) and a vertical offset (the second value) (the second value). If just one number is provided, it is used for the horizontal offset, and the vertical offset is set to 50% by default. If more than one number is provided, it is used for both the horizontal and vertical offsets. Because we're moving the background image away from the element's left top corner, the length values for that corner will be unique to that corner alone.
+                    
+                    To get the background-position value, we may use the keywords top, right, bottom, left, and center, as well as pixels, percentages, or any other measurement of length. Using keywords in conjunction with percentages has a very similar effect. Using the keyword value left top, which corresponds to the percentage value 0 0, you may maintain an image positioned in the element's left top corner. In this case, the keyword value right bottom corresponds to the percentage value 100% 100 percent, which will result in an image being shown in the element's right bottom corner.div {
+                      background-image: url("alert.png");
+                      background-position: 20px 10px;
+                      background-repeat: no-repeat;
+                    }
+                    
+                    
+                    </p>
 
 
 
@@ -217,11 +246,6 @@
 
 
     </main>
-
-
-
-
-
     <footer>
         ©2022 -Tara Nordmann
     </footer>
