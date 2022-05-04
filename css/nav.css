@@ -4,10 +4,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* 
- get rid of padding & sizing on body so
- header is at top
-*/
 
 body {
     box-sizing: border-box;
@@ -24,7 +20,7 @@ main {
 /* navbar */
 
 .navbar {
-    background-color: #333;
+    background-color: rgba(46, 46, 46, 0.9);
     color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -33,6 +29,7 @@ main {
     padding: 1rem;
 }
 
+
 /* logo */
 
 .logo {
@@ -40,41 +37,49 @@ main {
     align-items: center;
 }
 
-.logo img {
-    height: 6vw;
-    width: 6vw;
+.logo img{
+    height: 10vw;
+    width: 10vw;
 }
 
-.logo h1 {
-    font-size: 1.2em;
+.logo h1{
+    font-size: 1.5em;
 }
 
 /* navigation list */
 
-.navbar-links li {
+nav ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
+    }
+
+.navbar-links li {
     display: block;
-    padding: 0.5em 0;
+    list-style: none;
+    padding: 0.35em 0;
 }
+
+
 
 /*  
  style all a tags in header 
  and then on hover
 */
 
-.navbar-links a {
+.navbar-links a{
     color: whitesmoke;
-    background-attachment: #333;
-    font-size: 2rem;
-    padding: 1rem 1.25rem;
+    font-size: 1.5rem;
+    padding: .3rem 1rem;
     letter-spacing: 2px;
     text-decoration: none;
     display: inline-block;
 }
 
 .navbar-links a:hover,
-.navbar-links a:focus {
-    filter: invert(1);
+.navbar-links a:focus{
+    color: #333;
+    background-color: whitesmoke;
     border-radius: 10px;
     outline: none;
 }
@@ -85,14 +90,24 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 50em){
+    .navbar-links{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo img{
+        height: 4vw;
+        width: 4vw;
+    }
+
     .navbar {
         flex-direction: row;
         justify-content: space-between;
     }
-    
-    .navbar ul {
+
+    .navbar ul{
         display: flex;
-        justify-content: space-between;
     }
-} 
+
+}

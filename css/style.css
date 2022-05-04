@@ -1,9 +1,35 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    background-color: #000000;
-    color:#B28EDB;
+    color:#ffffff;
     text-align: center;
+    background-image: url(../img/venus-minimal-4k-qv1.jpg);
+    background-image: repeating-linear-gradient();
+    
 }
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #F9BBAF;
+    transition: 0.5s;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Baloo 2";
@@ -12,17 +38,19 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size:40pt;
 }
-
 header { 
     text-align: center;
 }
 
 #hero , footer {
-    border: 4px solid #DBE7AB;
     text-align: center;
-    background-color:#F9BBAF ;
+    background-color:#000 ;
     color:#FAF8FC ;
-    padding:10px;
+    border: 5px solid #DBE7AB;
+    border-bottom-left-radius:30px;
+    border-top-right-radius:30px;
+    border-top-left-radius:30px;
+    border-bottom-right-radius:30px;
 }
 
 #hero img {
@@ -34,16 +62,6 @@ header {
     text-align: center;
 }
 
-ul {
-    list-style-type: circle ;
-    
-}
-
-ul li{
-    background-color: #FAF8FC;
-    margin-bottom:  15px;
-    list-style-position: inside;
-}
 
 #gallery {
     border: 4px solid #DBE7AB;
@@ -84,7 +102,7 @@ ul li{
     margin-right: 1rem;
     line-height: 1rem;
     border:3px outset #000;
-    border: top left radius 1px;rem;
+    border: top left radius 1px rem;
     border-bottom-right-radius: 1rem;
     text-shadow: 5px 5px 4px ;
 }
